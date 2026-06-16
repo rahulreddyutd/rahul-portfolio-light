@@ -230,8 +230,10 @@ export default function Home() {
       <Nav />
 
       {/* HERO */}
-      <section style={{ minHeight: "100vh", display: "flex", flexDirection: "column", justifyContent: "center", padding: `120px ${W} 80px` }}>
-        <div style={{ maxWidth: "780px" }}>
+      <section style={{ minHeight: "100vh", display: "flex", alignItems: "center", padding: `120px ${W} 80px` }}>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center", width: "100%" }}>
+          {/* Left: text */}
+          <div>
           <div style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: "12px", color: C.orange, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "28px", display: "flex", alignItems: "center", gap: "10px" }}>
             <span style={{ display: "inline-block", width: "28px", height: "1.5px", background: C.orange }} />
             AI PRODUCT MANAGER
@@ -279,6 +281,22 @@ export default function Home() {
             ))}
           </div>
         </div>
+
+        {/* Right: architecture diagram */}
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <img
+            src="/architecture.png"
+            alt="AI system architecture: signals through retrieval, multi-agent OS, evaluation, governance, to decisions"
+            style={{
+              width: "100%",
+              maxWidth: "580px",
+              height: "auto",
+              borderRadius: "16px",
+              boxShadow: "0 8px 40px rgba(0,0,0,0.10)",
+            }}
+          />
+        </div>
+      </div>
       </section>
 
       {/* IMPACT NUMBERS */}
@@ -498,7 +516,7 @@ export default function Home() {
               <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "10px" }}>
                 {bullets.map((b, j) => (
                   <li key={j} style={{ fontSize: "14px", color: C.text2, paddingLeft: "18px", position: "relative", lineHeight: 1.65 }}>
-                    <span style={{ position: "absolute", left: 0, color: C.text3, fontSize: "16px", lineHeight: 1 }}>·</span>
+                    <span style={{ position: "absolute", left: 0, color: C.border, fontSize: "16px", lineHeight: 1 }}>-</span>
                     <span dangerouslySetInnerHTML={{ __html: b }} />
                   </li>
                 ))}
@@ -516,7 +534,7 @@ export default function Home() {
             Let&apos;s build something<br /><em style={{ fontStyle: "italic", color: C.orange }}>that governs itself.</em>
           </h2>
           <p style={{ fontSize: "16px", color: C.text2, lineHeight: 1.8, marginBottom: "36px" }}>
-            Open to Senior AI PM roles. Currently at Capital One, selectively evaluating the right next move.
+            Open to Senior AI PM roles at companies building products in fintech, healthtech, and enterprise SaaS. Currently at Capital One, selectively evaluating the right next move.
           </p>
           <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
             <a href="https://www.linkedin.com/in/rahulreddypuchakayala/" target="_blank" rel="noopener noreferrer" style={{ padding: "13px 26px", background: C.orange, color: "#fff", borderRadius: "7px", fontSize: "14px", fontWeight: 600, textDecoration: "none", transition: "background 0.15s" }}
