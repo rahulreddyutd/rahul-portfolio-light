@@ -498,7 +498,7 @@ export default function Home() {
               <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "10px" }}>
                 {bullets.map((b, j) => (
                   <li key={j} style={{ fontSize: "14px", color: C.text2, paddingLeft: "18px", position: "relative", lineHeight: 1.65 }}>
-                    <span style={{ position: "absolute", left: 0, color: C.border, fontSize: "16px", lineHeight: 1 }}>-</span>
+                    <span style={{ position: "absolute", left: 0, color: C.text3, fontSize: "16px", lineHeight: 1 }}>·</span>
                     <span dangerouslySetInnerHTML={{ __html: b }} />
                   </li>
                 ))}
@@ -516,7 +516,7 @@ export default function Home() {
             Let&apos;s build something<br /><em style={{ fontStyle: "italic", color: C.orange }}>that governs itself.</em>
           </h2>
           <p style={{ fontSize: "16px", color: C.text2, lineHeight: 1.8, marginBottom: "36px" }}>
-            Open to Senior AI PM roles at companies building products in fintech, healthtech, and enterprise SaaS. Currently at Capital One, selectively evaluating the right next move.
+            Open to Senior AI PM roles. Currently at Capital One, selectively evaluating the right next move.
           </p>
           <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
             <a href="https://www.linkedin.com/in/rahulreddypuchakayala/" target="_blank" rel="noopener noreferrer" style={{ padding: "13px 26px", background: C.orange, color: "#fff", borderRadius: "7px", fontSize: "14px", fontWeight: 600, textDecoration: "none", transition: "background 0.15s" }}
