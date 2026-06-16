@@ -95,7 +95,7 @@ function ProjectCard({ p, idx }: { p: typeof PROJECTS[0]; idx: number }) {
   return (
     <div className="sr" style={{
       background: C.card, border: `1px solid ${C.border}`,
-      borderRadius: "16px", overflow: "hidden",
+       overflow: "hidden",
       boxShadow: "0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.04)",
       transition: "box-shadow 0.2s, border-color 0.2s",
     }}
@@ -125,13 +125,13 @@ function ProjectCard({ p, idx }: { p: typeof PROJECTS[0]; idx: number }) {
           <img src={screenshotUrl} alt={p.name}
             onLoad={() => setImgLoaded(true)}
             onError={() => setImgError(true)}
-            style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover", objectPosition: "top", opacity: imgLoaded ? 1 : 0, transition: "opacity 0.4s" }} />
+            style={{ position: "absolute", top: 0, left: 0, width: "115%", height: "100%", objectFit: "cover", objectPosition: "top", opacity: imgLoaded ? 1 : 0, transition: "opacity 0.4s" }} />
         )}
         {!imgLoaded && !imgError && (
           <div style={{ position: "absolute", inset: 0 }} className="shimmer" />
         )}
         {imgError && (
-          <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "8px", background: C.surface }}>
+          <div style={{ position: "absolute", inset: 0, display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", marginRight: "-60px", gap: "8px", background: C.surface }}>
             <div style={{ fontFamily: "'Instrument Serif',serif", fontSize: "32px", color: p.color }}>{p.name}</div>
             <div style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: "11px", color: C.text3 }}>Live at {p.url.replace("https://","")}</div>
           </div>
@@ -283,16 +283,16 @@ export default function Home() {
         </div>
 
         {/* Right: architecture diagram */}
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end", marginRight: "-60px" }}>
           <img
             src="/architecture.png"
             alt="AI system architecture: signals through retrieval, multi-agent OS, evaluation, governance, to decisions"
             style={{
-              width: "100%",
-              maxWidth: "580px",
+              width: "115%",
+              
               height: "auto",
-              borderRadius: "16px",
-              boxShadow: "0 8px 40px rgba(0,0,0,0.10)",
+              
+              
             }}
           />
         </div>
@@ -449,7 +449,7 @@ export default function Home() {
             ].map((node, i, arr) => (
               <div key={node.label} style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                 <div style={{
-                  width: "100%", background: C.card,
+                  width: "115%", background: C.card,
                   border: `1.5px solid ${node.color}30`,
                   borderLeft: `4px solid ${node.color}`,
                   borderRadius: "8px", padding: "16px 20px",
