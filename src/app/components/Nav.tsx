@@ -23,10 +23,10 @@ export default function Nav() {
     }}>
       <Link href="/" style={{ textDecoration: "none", display: "flex", alignItems: "baseline", gap: "8px" }}>
         <span style={{ fontFamily: "'Instrument Serif',serif", fontSize: "18px", color: "#111111", letterSpacing: "-0.01em" }}>
-          Rahul Reddy
+          Rahul Reddy Puchakayala
         </span>
         <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: "11px", color: "#9B9890", letterSpacing: "0.04em" }}>
-          AI PM
+          AI Product Manager
         </span>
       </Link>
       <div style={{ display: "flex", gap: "32px", alignItems: "center" }}>
@@ -49,7 +49,6 @@ export default function Nav() {
           background: "#F97316", color: "#FFFFFF",
           borderRadius: "6px", fontSize: "13px", fontWeight: 600,
           textDecoration: "none", transition: "background 0.15s",
-          letterSpacing: "0.01em",
         }}
         onMouseEnter={e => (e.currentTarget.style.background = "#EA6A0A")}
         onMouseLeave={e => (e.currentTarget.style.background = "#F97316")}
