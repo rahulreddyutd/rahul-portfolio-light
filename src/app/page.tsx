@@ -231,7 +231,7 @@ export default function Home() {
 
       {/* HERO */}
       <section style={{ minHeight: "100vh", display: "flex", alignItems: "center", padding: `120px ${W} 80px` }}>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "center", width: "100%" }}>
+        <div style={{ maxWidth: "780px" }}>
           {/* Left: text */}
           <div>
           <div style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: "12px", color: C.orange, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "28px", display: "flex", alignItems: "center", gap: "10px" }}>
