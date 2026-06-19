@@ -282,20 +282,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Right: architecture diagram */}
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end", marginRight: "-60px" }}>
-          <img
-            src="/architecture.png"
-            alt="AI system architecture: signals through retrieval, multi-agent OS, evaluation, governance, to decisions"
-            style={{
-              width: "115%",
-              
-              height: "auto",
-              
-              
-            }}
-          />
-        </div>
       </div>
       </section>
 
