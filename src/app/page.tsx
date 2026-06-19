@@ -247,7 +247,7 @@ export default function Home() {
           </h1>
 
           <p style={{ fontSize: "18px", color: C.text2, lineHeight: 1.75, maxWidth: "560px", marginBottom: "16px" }}>
-            6+ years building LLMs, RAG pipelines, and multi-agent systems in regulated environments. Cut analyst report time by 50%, scaled compliance monitoring from 1% to 100% of transactions, and eliminated $1M+ in annual software spend at Capital One.
+            Building LLMs, RAG pipelines, and multi-agent systems in regulated environments at Capital One. Cut analyst report time by 50%, scaled compliance monitoring from 1% to 100% of transactions, and eliminated $1M+ in annual software spend.
           </p>
 
           <div style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: "13px", color: C.text3, marginBottom: "48px", minHeight: "20px" }}>
